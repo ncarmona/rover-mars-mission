@@ -1,27 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div id='app'>
+    <div>
+      <ControlsComponent />
+    </div>
+    <div>
+      <MissionReporterComponent />
+    </div>
+    <div>
+      <MapComponent />
+    </div>
+  </div>
 </template>
 
-<script lang="ts">
+<script lang='ts'>
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
-
+import MapComponent from './components/MapComponent.vue'
+import ControlsComponent from './components/ControlsComponent.vue'
+import MissionReporterComponent from './components/MissionReporterComponent.vue'
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    MapComponent,
+    ControlsComponent,
+    MissionReporterComponent
   }
 })
 </script>
 
-<style lang="scss">
+<style lang='scss'>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>

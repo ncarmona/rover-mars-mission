@@ -1,29 +1,32 @@
 # rover-mars-mission
 
-## Project setup
-```
-npm install
-```
+Housfy technical interview. Given a planet and a rover controlled by the user you must perform a rover mars mission.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Planet
+It is a weird planet with an square form and obstacles.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Planet configuration
+Planet size it is provided by mapsize in the __config.ts__ file.
+## Exercise requirements
+- Before mission start user must give: Commands, orientation and start position.
+- Rover can perform the following commands: F(Forward), L(Left) and R(Right).
+- Rover must have an specific orientation: North, East, South and West.
+- Rover must detect obstacles.
+- If rover can perfom all commands without find any obstacle the mission will be a success.
+- If rover finds an obstacle will notify the user the obstacle position and abort the mission.
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## Execute rover-mars-mission
+### Software requirements
+This project only runs in the client side, so only [node](https://nodejs.dev/download) it's needed.
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Project dependencies
+In order to run the project go to the root folder of the project and exec this command:
+> npm run install
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Once the process ends all dependencies will be installed and the project it is ready for run.
+
+### Execution
+In the root folder of the project execute:
+> npm run serve
+
+and open the url provided in your terminal.
